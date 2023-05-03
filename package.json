@@ -5,10 +5,16 @@
   "repository": "git@github.com:kaionesyan/buka-backend.git",
   "author": "Kaio <kaionesyan@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
   "devDependencies": {
     "@rocketseat/eslint-config": "^1.2.0",
     "@types/node": "^18.16.3",
     "eslint": "^8.39.0",
-    "typescript": "^5.0.4"
+    "typescript": "^5.0.4",
+    "vite-tsconfig-paths": "^4.2.0",
+    "vitest": "^0.31.0"
   }
 }
