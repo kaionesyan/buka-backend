@@ -9,8 +9,8 @@ interface CreateAdminUseCaseRequest {
 
 export class CreateAdminUseCase {
   constructor(
-    private adminsRepository: AdminsRepository,
     private hashProvider: HashProvider,
+    private adminsRepository: AdminsRepository,
   ) {}
 
   async execute({ username, password }: CreateAdminUseCaseRequest) {
