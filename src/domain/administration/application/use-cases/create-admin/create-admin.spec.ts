@@ -1,4 +1,4 @@
-import { HashProvider } from '../providers/hash.provider'
+import { HashProvider } from '@/domain/shared/application/providers/hash.provider'
 import { AdminsRepository } from '../repositories/admins.repository'
 import { CreateAdminUseCase } from './create-admin.use-case'
 

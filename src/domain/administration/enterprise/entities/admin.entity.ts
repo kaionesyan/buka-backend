@@ -1,8 +1,8 @@
-import { BaseEntity } from '@/core/entities/base.entity'
-import { UniqueEntityID } from '@/core/entities/unique-entity-id.entity'
-import { Optional } from '@/core/types/optional.type'
+import { BaseEntity } from '@/domain/shared/enterprise/entities/base.entity'
+import { UniqueEntityID } from '@/domain/shared/enterprise/entities/unique-entity-id.entity'
+import { Optional } from '@/domain/shared/enterprise/types/optional.type'
 
-interface AdminProps {
+export interface AdminProps {
   username: string
   passwordHash: string
   createdAt: Date
@@ -45,7 +45,7 @@ export class Admin extends BaseEntity<AdminProps> {
   }
 
   static create(props: Optional<AdminProps, 'createdAt'>, id?: UniqueEntityID) {
-    const admin = new Admin({ ...props, createdAt: new Date() })
+    const admin = new Admin({ ...props, createdAt: new Date() }, id)
 
     return admin
   }

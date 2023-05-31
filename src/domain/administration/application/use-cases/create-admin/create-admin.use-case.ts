@@ -1,6 +1,6 @@
-import { Admin } from '../entities/admin.entity'
-import { HashProvider } from '../providers/hash.provider'
-import { AdminsRepository } from '../repositories/admins.repository'
+import { Admin } from '@/domain/administration/enterprise/entities/admin.entity'
+import { HashProvider } from '@/domain/shared/application/providers/hash/hash.provider'
+import { AdminsRepository } from '../../repositories/admins.repository'
 
 interface CreateAdminUseCaseRequest {
   username: string
